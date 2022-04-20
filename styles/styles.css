@@ -9,6 +9,11 @@ html {
     font-family: 'DM Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
 :root {
     --bitcoin-range: #F7931A;
     --soft-orange: #FFE9D4;
