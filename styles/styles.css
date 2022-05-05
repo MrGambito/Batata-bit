@@ -297,7 +297,7 @@ main {
 
 .real-time, .no-hidden, .cash, .confidence{
     position: relative;
-    width: 288px;
+    min-width: 288px;
     margin-bottom: 20px;
     background-color: #282623;
     border-radius: 4px;
@@ -356,4 +356,22 @@ main {
     background-image: url('../assets/icons/batata_icon.svg');
     left: calc(50% - 20px);
     top: -10px;
+}
+
+.bitcoin-baby {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('../assets/img/bitcoinbabyx2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.bitcoin-baby h2 {
+    padding-top: 64px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--just-white);
 }
