@@ -96,7 +96,8 @@ header img {
 }
 
 main {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     background-color: var(--off-white);
@@ -140,26 +141,25 @@ main {
 }
 
 .main--table-container {
-    /* display: flex; */
     flex-direction: row;
     overflow: hidden;
 }
 
 .main--table-container--carousel {
-    /*
     display: flex;
-    */
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    justify-content: center;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    align-items: center;
+    overscroll-behavior-x: contain;
 }
 
 .main--currency-table {    
     min-width: 235px;
-    max-width: 500px;
     height: 360px;
+    scroll-snap-align: center;
     font-family: "Inter", sans-serif;
+
 }
 
 .main--table-container .main--currency--title {
@@ -170,6 +170,7 @@ main {
     text-align: left;
     font-family: "DM Sans", sans-serif;
     color: var(--bitcoin-range);
+    text-align: center;
 }
 
 .main--table-container .main--comissions--title {
@@ -180,6 +181,7 @@ main {
     text-align: left;
     font-family: "DM Sans", sans-serif;
     color: var(--secondary-blue);
+    text-align: center;
 }
 
 .currency-table--container, .comissions-table--container {
@@ -202,6 +204,10 @@ main {
     line-height: 1.9rem;
     color: var(--grey);
     background-color: var(--just-white);
+}
+
+.main--comissions-table {
+    scroll-snap-align: center;
 }
 
 .currency-table--container .table__top-left, .comissions-table--container .table__top-left {
@@ -485,6 +491,7 @@ main {
     min-width: 230px;
     max-width: 300px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    margin: 0 10px;
 }
 
 .plan-info-container, .plan-limited-info-container {
